@@ -18,7 +18,7 @@ from .utils import print_sys, compute_metrics, save_dict, \
                         load_dict, load_pretrained, save_model, \
                         evaluate_minibatch_clean, process_data, \
                         get_network_weight, generate_viz
-from .eval_utils import storey_ribshirani_integrate, get_clumps_gold_label, get_meta_clumps, \
+from .eval_utils import storey_tibshirani_integrate, get_clumps_gold_label, get_meta_clumps, \
                         get_mega_clump_query, get_curve, find_closest_x
 from .model import HeteroGNN
 
