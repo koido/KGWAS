@@ -536,7 +536,7 @@ def storey_pi_estimator(gwas_data, bin_index):
         pi0_est = 1
     return pi0_est
 
-def storey_ribshirani_integrate(gwas_data, column = 'pred', num_bins = 100):
+def storey_tibshirani_integrate(gwas_data, column = 'pred', num_bins = 100):
     num_bins = float(num_bins)
     quantiles = np.arange(0, 1 + 1 / (num_bins+1), 1 / num_bins)
     predicted_tagged_variance_quantiles = gwas_data[column].quantile(quantiles)
